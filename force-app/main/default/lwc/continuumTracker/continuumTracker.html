@@ -1,0 +1,18 @@
+<template>
+    <lightning-spinner alternative-text="Loading" if:true={loading}></lightning-spinner>
+    <lightning-card title="Select Engagement">
+        <div class="slds-p-horizontal_medium">
+            <p class="slds-p-vertical_small">Select an available engagement to begin tracking. To stop, select 'No Engagement'</p>
+            <div class="slds-grid slds-gutters slds-wrap">
+                <div class="slds-col slds-size_1-of-1 slds-large-size_1-of-5 slds-m-bottom_small">
+                    <c-continuum-selector icon-variant="error" icon-name="utility:close" engagement={none} onselected={userSelection}></c-continuum-selector>
+                </div>
+                <template for:each={engagements} for:item="e">
+                    <div key={e.id} class="slds-col slds-size_1-of-1 slds-large-size_1-of-5 slds-m-bottom_small">
+                        <c-continuum-selector engagement={e} onselected={userSelection}></c-continuum-selector>
+                    </div>
+                </template>
+            </div>
+        </div>
+    </lightning-card>
+</template>
