@@ -3,11 +3,11 @@
         "experimentalDecorators": true,
         "baseUrl": ".",
         "paths": {
-            "c/continuumTracker": [
-                "continuumTracker/continuumTracker.js"
-            ],
             "c/continuumSelector": [
                 "continuumSelector/continuumSelector.js"
+            ],
+            "c/continuumTracker": [
+                "continuumTracker/continuumTracker.js"
             ]
         }
     },

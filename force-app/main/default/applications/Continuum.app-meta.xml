@@ -14,6 +14,7 @@
     <tabs>Engagement__c</tabs>
     <tabs>Engagement_Entry__c</tabs>
     <tabs>Continuum_Time_Tracker</tabs>
+    <tabs>standard-report</tabs>
     <uiType>Lightning</uiType>
     <utilityBar>Continuum_UtilityBar</utilityBar>
 </CustomApplication>

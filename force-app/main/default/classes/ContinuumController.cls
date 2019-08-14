@@ -1,5 +1,4 @@
-@RestResource(urlMapping='/Engagement_Entry__c/*')
-global with sharing class ContinuumController {
+public with sharing class ContinuumController {
     @AuraEnabled
     public static List<EngagementDto> getAvailableEngagements() {
         List<Engagement__c> engagements = EngagementSelector.getAvailableEngagements();
@@ -31,8 +30,7 @@ global with sharing class ContinuumController {
     }
 
     @AuraEnabled
-    @HttpPost
-    global static void startEngagementEntry(Id engagementId) {
+    public static void startEngagementEntry(Id engagementId) {
         if (endEngagementsExceptId(engagementId) == false) return;
         // Save new engagement with current start time for the given ID
         Engagement_Entry__c entry = new Engagement_Entry__c(Engagement__c = engagementId, Start__c = Datetime.now());
