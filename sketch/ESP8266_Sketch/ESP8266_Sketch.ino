@@ -1,8 +1,8 @@
 #include "ESP8266WiFi.h"
 #include <ESP8266HTTPClient.h>
 
-const char* ssid = "Dan iPhone"; //Enter SSID
-const char* password = "l1acoeAaiae"; //Enter Password
+const char* ssid = "<ssid>"; //Enter SSID
+const char* password = "<password>"; //Enter Password
 const int ledPin = 0;
 
 void setup(void)
