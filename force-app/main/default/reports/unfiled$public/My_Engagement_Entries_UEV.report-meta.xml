@@ -8,14 +8,11 @@
         <field>Engagement_Entry__c.Duration__c</field>
     </columns>
     <columns>
-        <field>Engagement_Entry__c.Start__c</field>
-    </columns>
-    <columns>
         <field>Engagement_Entry__c.End__c</field>
     </columns>
     <format>Matrix</format>
     <groupingsAcross>
-        <field>Engagement__c.Start__c</field>
+        <field>Engagement_Entry__c.Start__c</field>
         <sortOrder>Asc</sortOrder>
     </groupingsAcross>
     <groupingsDown>

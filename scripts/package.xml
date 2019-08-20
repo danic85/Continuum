@@ -11,6 +11,10 @@
     <members>Continuum_User</members>
   </types>
   <types>
+    <name>ApexClass</name>
+    <members>*</members>
+  </types>
+  <types>
     <name>CustomTab</name>
     <members>Engagement__c</members>
     <members>Engagement_Entry__c</members>

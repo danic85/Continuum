@@ -1,5 +1,7 @@
-public with sharing class EngagementSelector {
-    public static List<Engagement__c> getAvailableEngagements() {
+@RestResource(urlMapping='/Engagements/*')
+global with sharing class EngagementSelector {
+    @HttpGet
+    global static List<Engagement__c> getAvailableEngagements() {
         // return all active engagements for the current user in the given timeframe
         return [SELECT Id, Name, (SELECT ID FROM Engagement_Entries__r WHERE End__c = NULL) FROM Engagement__c 
                                             WHERE Active__c  = true 
